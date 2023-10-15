@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-
       <div className='w-4/5 mx-auto'>
         <div className='text-center my-14'>
           <h2 className="text-4xl">Our Popular Products</h2>
