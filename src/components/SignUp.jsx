@@ -17,7 +17,7 @@ const SignUp = () => {
             const createdAt = result.user?.metadata?.creationTime;
             const lastLoggedAt = result.user?.metadata?.lastSignInTime;
             const user = {email, createdAt: createdAt, lastLoggedAt: lastLoggedAt};
-            fetch('http://localhost:5000/user', {
+            fetch('https://practice-coffee-server-ip1znse06-shakia-ripas-projects.vercel.app/user', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

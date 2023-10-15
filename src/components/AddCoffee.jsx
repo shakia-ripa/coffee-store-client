@@ -15,7 +15,7 @@ const AddCoffee = () => {
         const newCoffee = { name, quantity, supplier, taste, category, details, photo }
         console.log(newCoffee);
 
-        fetch('http://localhost:5000/coffee', {
+        fetch('https://practice-coffee-server-ip1znse06-shakia-ripas-projects.vercel.app/coffee', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

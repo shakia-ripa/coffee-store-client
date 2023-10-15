@@ -19,7 +19,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/coffee/${_id}`, {
+                fetch(`https://practice-coffee-server-ip1znse06-shakia-ripas-projects.vercel.app/coffee/${_id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())
@@ -61,7 +61,9 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
 };
 
 CoffeeCard.propTypes = {
-    coffee: PropTypes.object
+    coffee: PropTypes.object,
+    coffees: PropTypes.array,
+    setCoffees: PropTypes.func
 }
 
 export default CoffeeCard;
